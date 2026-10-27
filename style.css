@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+}
+
+#entrada {
+    position: fixed;
+    inset: 0;
+    background: #100710;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-align: center;
+    padding: 25px;
+    z-index: 10;
+}
+
+#entrada h1 {
+    color: #ff7fa5;
+    font-family: Georgia, serif;
+    font-size: clamp(26px, 6vw, 40px);
+}
+
+#entrada p {
+    color: #ffd1df;
+    font-family: Georgia, serif;
+}
+
+#senha {
+    padding: 14px;
+    border: 1px solid #ff648d;
+    border-radius: 12px;
+    background: #28121e;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    width: min(280px, 90%);
+}
+
+#entrada button {
+    background: #ff3366;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#entrada button:hover {
+    background: #e82557;
+}
+
+#erro {
+    color: #ff809d;
+}
+
+#surpresa {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+}
+
+#canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.mensagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+    width: 95%;
+
+    font-family: 'Style Script', cursive;
+    font-size: clamp(32px, 7vw, 60px);
+    font-weight: normal;
+
+    color: #ff8fab;
+    text-align: center;
+    text-shadow: 0 0 10px #ff3366,
+                 0 0 20px #ff3366;
+
+    pointer-events: none;
+}

@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma surpresa para você ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="entrada">
+        <h1>Uma surpresa para você ❤️</h1>
+        <p>Digite a senha secreta para descobrir.</p>
+
+        <input type="password" id="senha"
+               placeholder="Nossa senha secreta...">
+
+        <button onclick="verificarSenha()">
+            Abrir meu presente 
+        </button>
+
+        <p id="erro"></p>
+    </div>
+
+   <div id="surpresa" style="display: none;">
+    <canvas id="canvas"></canvas>
+    <h1 class="mensagem">Eu te amo, meu bem! </h1>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
