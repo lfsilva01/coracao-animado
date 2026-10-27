@@ -75,7 +75,7 @@ function verificarSenha() {
     const senha = document.getElementById("senha").value;
     const erro = document.getElementById("erro");
 
-    if (senha.trim().toLowerCase() === "29.10.2025") {
+    if (senha.trim().toLowerCase() === "29.10.25") {
         document.getElementById("entrada").style.display = "none";
         document.getElementById("surpresa").style.display = "block";
 
